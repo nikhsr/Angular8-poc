@@ -1,0 +1,28 @@
+<div font-size="x-large">
+<div class="container-fluid">
+
+    <form class="example-form">
+      
+        <input   matInput placeholder="search by city" value="" name='city' [(ngModel)]="city" >
+      
+    </form>
+  
+    <button   mat-stroked-button color="primary"  (click)="searchBycity()">Search Property</button>
+
+    
+
+<div  *ngIf="flag">
+    <div  *ngFor="let property of propertyList">
+        <div class="card border-primary">
+            <img class="card-img-top" src="" alt="">
+            <div class="card-body">
+              <h4 class="card-title">{{property.name}}</h4>
+              <p class="card-text">{{property.address.streetName}}</p>
+            </div>
+          </div>
+    </div>
+</div> 
+</div> 
+</div>
+
+

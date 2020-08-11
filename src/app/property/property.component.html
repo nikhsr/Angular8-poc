@@ -1,0 +1,57 @@
+<!-- <table class="table">
+    <thead *ngFor="let property of propertyList">
+        <tr >
+            <th>PropertyId</th>
+            <th>Name</th>
+            <th>coordinates </th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let property of propertyList">
+        <tr>
+            <td scope="row"> {{property.propertyId}}</td>
+            <td>{{property.name}}</td>
+            <td>{{property.coordinateURL}}</td>
+        </tr>
+    </tbody>
+</table> -->
+<!-- <div *ngFor= " let property of propertyList">
+<mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>{{property.name}}</mat-card-title>
+      <mat-card-subtitle></mat-card-subtitle>
+    </mat-card-header>
+    
+    <mat-card-content>
+        <p>
+            {{property.address.city}}
+        </p>
+
+      <p>
+        {{property.coordinateURL}}
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>LIKE</button>
+      <button mat-button>SHARE</button>
+    </mat-card-actions>
+  </mat-card>
+</div> -->
+
+<div class="row card-group">
+    <div class="col-4"  *ngFor="let property of propertyList; let i = index">
+        <div class="card" style="height: 300; width: 250;">
+            <img src = "../../assets/images/image{{i}}.jpg" height="200" >
+            <div class="card-body">
+              <h3 class="card-title">{{property.name}}</h3>
+              <p class="card-text">{{property.address.city}}</p><br>
+              <p class="card-text">{{property.address.streetName}}</p><br>
+              <p class="card-text">{{property.address.state}}</p><br>
+
+              <p class="card-text">Selling Price:{{property.price}} Rupees</p><br>
+
+            </div>
+        </div>
+    </div>
+</div>
+    

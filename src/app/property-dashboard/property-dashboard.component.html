@@ -1,0 +1,6 @@
+<div class="grid-container">
+  <h1 class="mat-h1">Dashboard</h1>
+  <mat-grid-list *ngFor="let property of propertyList" cols="2" rowHeight="350px">
+    <mat-card>{{property.name}}</mat-card>
+  </mat-grid-list>
+</div>

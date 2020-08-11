@@ -1,0 +1,30 @@
+
+    
+
+.navbar-brand {
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 3rem;
+    line-height: inherit;
+    white-space: nowrap;
+    }
+     
+    .nav-link {
+    display: inline-block;
+    padding-top: .3225rem;
+    padding-bottom: .3150rem;
+    margin-right: 1rem;
+    font-size: 1.75rem;
+    line-height: inherit;
+    white-space: nowrap;
+    }
+     
+    .dropdown-menu.dropdown-item {
+    font-size: 1.75rem;
+    }
+    
+    body {
+        font-size: x-large;
+    }
